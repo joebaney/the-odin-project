@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Odin Library</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <h1>Library</h1>
+        <button id="open-modal">New Book</button>
+      </div>
+
+      <dialog id="modal">
+        <h2>Add a New Book</h2>
+        <form action="" id="form">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" />
+
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" />
+
+          <label for="pages">Page Amount</label>
+          <input type="text" name="pages" id="pages" />
+
+          <div class="checkbox-group">
+            Read?
+            <input type="checkbox" name="read" id="read" />
+          </div>
+
+          <button id="add-book" type="submit">Add</button>
+        </form>
+        <button id="close-modal">Cancel</button>
+      </dialog>
+
+      <div id="card-container">
+        <!-- <div id="card">
+          <h2 id="card-title">Title:</h2>
+          <h3 id="card-author">Author:</h3>
+          <p id="card-pages">Pages:</p>
+          <button class="read">Read</button>
+          <button class="delete">Delete Book</button> -->
+        <!-- </div> -->
+      </div>
+
+      <footer>©The Odin Project 2026</footer>
+    </div>
+  </body>
+</html>

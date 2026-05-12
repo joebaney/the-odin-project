@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  font-family: "Open Sans";
+  background-color: #f4f6f8;
+  color: #1f2933;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.nav {
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2833;
+  color: #ffffff;
+}
+
+.nav button {
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  width: 120px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+#card-container {
+  padding: 40px 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  row-gap: 40px;
+}
+
+#card {
+  border: 1px solid #e5e7eb;
+  max-width: 300px;
+  max-height: 350px;
+  border-radius: 12px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#card .delete {
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  width: 60%;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #ef4444;
+  color: #ffffff;
+  align-self: center;
+}
+
+#card .read {
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  width: 60%;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #22c55e;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+#card .unread {
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  width: 60%;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #f59e0b;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+footer {
+  border: 1px solid;
+  padding: 20px;
+  text-align: center;
+  background-color: #1f2933;
+  color: #9ca3af;
+}
+
+#modal {
+  width: 20%;
+  height: 50%;
+  border-radius: 12px;
+  border: 4px solid #1f2833;
+  background-color: #e5e7eb;
+}
+
+#modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+#modal h2 {
+  text-align: center;
+}
+
+#modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"] {
+  height: 20px;
+  width: 80%;
+  padding: 2px;
+}
+
+#modal #add-book {
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  width: 60%;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: auto;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  padding: 0;
+  transform: scale(1.3);
+}
+
+#modal #close-modal {
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  width: 60%;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #ef4444;
+  color: #ffffff;
+  display: block;
+  margin: 0 auto;
+}
